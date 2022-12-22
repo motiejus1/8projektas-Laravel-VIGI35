@@ -27,7 +27,7 @@ class StudentFactory extends Factory
             'surname' => $this->faker->lastName(),
             'email' => $this->faker->unique()->safeEmail(),
             'phone' => $this->faker->unique()->phoneNumber(),
-            'group_id' => $this->faker->numberBetween(1, 15) // ??????????
+            // 'group_id' => $this->faker->numberBetween(1, 15) // ??????????
 
             //veiks
             //grupiu yra 15, generuojame skaiciu nuo 1 iki 10

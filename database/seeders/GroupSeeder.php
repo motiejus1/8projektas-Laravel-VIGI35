@@ -20,10 +20,10 @@ class GroupSeeder extends Seeder
 
         //kai kuriama grupe, tegu jei iskarto susikuria studentai
         //Student::factory()->count(50)->create();
-        Group::factory()->count(15)->create();
+        // Group::factory()->count(15)->create();
 
         // neveikia ????
-        // Group::factory()->count(15)->groupStudents(10)->create();
+        // Group::factory()->count(15)->groupStudents(1)->create();
 
         //Laravel 7
 
@@ -36,10 +36,17 @@ class GroupSeeder extends Seeder
         //     ->create();
         // }
 
-        
-            // Group::factory()
-            // ->has(Student::factory()->count(10), 'groupStudents')
-            // ->create();
+            $student_number = rand(1,100);
+
+
+            Group::factory()
+            ->has(Student::factory()->count($student_number), 'groupStudents')
+            ->count(15)
+            ->create();
+
+            // sukuria grupe -> iskart jei sukuria 10 studentu
+            // sukuria grupe -> iskart jei sukuria 10 studentu
+            // sukuria grupe -> iskart jei sukuria 10 studentu
 
         //  Group::factory()->count(15)->groupStudents()->create();   
 

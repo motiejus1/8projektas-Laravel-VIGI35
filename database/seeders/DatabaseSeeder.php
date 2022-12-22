@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             
             GroupSeeder::class, // 1 paleidziame grupes
-           StudentSeeder::class, //  2 paleidziame studentus
+        //    StudentSeeder::class, //  2 paleidziame studentus
         ]);
     }
 }
